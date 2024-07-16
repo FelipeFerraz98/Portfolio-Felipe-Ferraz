@@ -1,0 +1,36 @@
+{
+    "header":{
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+
+    "home": {
+      "title": "Hi, I'm",
+      "name": "Felipe Ferraz",
+      "profession": "FullStack Developer",
+      "contactButton": "Contact me"
+    },
+
+    "about": {
+    "title": "About",
+    "content": {
+      "intro": "Full Stack Developer passionate about creating innovative solutions. I stand out for my",
+      "quickLearning": " quick learning ability",
+      "and": " and",
+      "deepTechnical": " deep technical knowledge",
+      "praisedFor": ", praised for",
+      "solvingProblems": " solving complex problems efficiently",
+      "duringInternship": "During my internship at Dazsoft, I was recognized for my",
+      "fastLearning": " fast learning ability",
+      "effectiveCommunication": " effective communication under pressure",
+      "dealingWithCustomers": " dealing with customers in a transparent and resolute way",
+      "versatileProfessional": " I am a versatile professional, committed to",
+      "committedToExcellence": " excellence",
+      "andThe": " and the",
+      "successOfProjects": " success of the projects in which I am involved.",
+      "skillsTitle": "My Skills"
+    }
+  }
+}
+  

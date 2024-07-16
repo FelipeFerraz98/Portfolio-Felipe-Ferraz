@@ -1,0 +1,36 @@
+{
+    "header":{
+        "home": "Inicio",
+        "about": "Sobre",
+        "contact": "Contato"
+    },
+
+    "home": {
+      "title": "Olá, eu sou",
+      "name": "Felipe Ferraz",
+      "profession": "Desenvolvedor FullStack",
+      "contactButton": "Entre em contato"
+    },
+
+    "about": {
+    "title": "Sobre",
+    "content": {
+      "intro": "Desenvolvedor Full Stack apaixonado por criar soluções inovadoras. Destaco-me pela minha",
+      "quickLearning": " habilidade de aprendizado rápido",
+      "and": " e",
+      "deepTechnical": " conhecimento técnico profundo",
+      "praisedFor": ", elogiado por",
+      "solvingProblems": " resolver problemas complexos de forma eficiente",
+      "duringInternship": "Durante meu estágio na Dazsoft, fui reconhecido pela minha",
+      "fastLearning": " habilidade de aprendizado rápido",
+      "effectiveCommunication": " comunicação eficaz sob pressão",
+      "dealingWithCustomers": " lidar com clientes de forma transparente e determinada",
+      "versatileProfessional": " Sou um profissional versátil, comprometido com",
+      "committedToExcellence": " excelência",
+      "andThe": " e o",
+      "successOfProjects": " sucesso dos projetos em que estou envolvido.",
+      "skillsTitle": "Minhas Habilidades"
+    }
+  }
+  }
+  

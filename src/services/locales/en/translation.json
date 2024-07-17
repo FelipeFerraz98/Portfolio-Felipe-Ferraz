@@ -31,6 +31,22 @@
       "successOfProjects": " success of the projects in which I am involved.",
       "skillsTitle": "My Skills"
     }
+  },
+
+  "experience": {
+    "title": "Experience",
+    "content": {
+      "first": {
+        "title": "FullStack Developer",
+        "location": "Self-employed | Feb 2024 - present",
+        "description": "Development of applications autonomously for customers."
+      },
+      "second": {
+        "title": "Internship - IT Support",
+        "location": "Dazsoft | Apr de 2023 - Apr de 2024",
+        "description": "Support and HelpDesk from N1 to N4; Machine monitoring with Zabbix; Verification of SIP logs and data packets in Asterisk and Opensips; Rest API implementation for customers; Training and implementation of new clients."
+      }
+    }
   }
 }
   

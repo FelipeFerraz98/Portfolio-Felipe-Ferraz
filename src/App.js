@@ -7,6 +7,7 @@ import {
   useParams,
 } from 'react-router-dom';
 import { GlobalStyle } from './styles/global';
+import ScrollToTop from './ScrollToTop';
 import { Header } from './components/Header';
 // import { Footer } from './components/Footer'
 import { Home } from './pages/Home';
@@ -16,6 +17,7 @@ import { LanguageProvider, useLanguage } from './hooks/useLanguage';
 
 import './services/i18n';
 import { Skills } from './pages/Skills';
+import { Experience } from './pages/Experience';
 
 function App() {
   return (
@@ -42,10 +44,12 @@ const MainApp = () => {
 
   return (
     <>
+      <ScrollToTop />
       <Header />
-        <Home />
+      <Home />
       <About />
       <Skills />
+      <Experience />
       <Routes>
         {/* Adicione outras rotas conforme necessário */}
       </Routes>

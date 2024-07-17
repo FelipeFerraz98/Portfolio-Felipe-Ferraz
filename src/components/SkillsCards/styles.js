@@ -4,7 +4,6 @@ export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
 `;
 
 export const Card = styled.div`
@@ -29,7 +28,5 @@ export const TextContent = styled.p`
     font-size: 20px;
     margin-top: 10px;
     line-height: 30px;
-
     color: #fff;
-    margin-bottom: 8em;
 `;

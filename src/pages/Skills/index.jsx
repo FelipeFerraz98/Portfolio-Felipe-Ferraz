@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Container, Title, Stroke, MainBox, TextBox, MainBoxWrapper } from './styles';
+import { Container, Title, Stroke, MainBox, TextBox, MainBoxWrapper, CardBox } from './styles';
 import { SkillsCards } from '../../components/SkillsCards';
 import { useTranslation } from 'react-i18next';
 
@@ -16,7 +16,9 @@ const Skills = () => {
                 <Title>{t('about.content.skillsTitle')}</Title>
                 <Stroke />
             </TextBox>
-            <SkillsCards />
+            <CardBox>
+              <SkillsCards />
+            </CardBox>
         </MainBox>
         </MainBoxWrapper>
     </Container>

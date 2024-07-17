@@ -31,6 +31,24 @@
       "successOfProjects": " sucesso dos projetos em que estou envolvido.",
       "skillsTitle": "Minhas Habilidades"
     }
+  },
+
+  "experience": {
+  "title": "Experiência",
+  "content": {
+    "first": {
+      "title": "Desenvolvedor FullStack",
+      "location": "Autônomo | Fev 2024 - presente",
+      "description": "Desenvolvimento de aplicações de forma autônoma para clientes."
+      },
+    "second": {
+      "title": "Estágio - Suporte de TI",
+      "location": "Dazsoft | Abr 2023 - Abr 2024",
+      "description": "Suporte e HelpDesk do N1 ao N4; Monitoramento de máquinas com Zabbix; Verificação de logs SIP e pacotes de dados no Asterisk e Opensips; Implementação de API Rest para clientes; Treinamento e implementação de novos clientes."
+      }
+    }
   }
-  }
+
+}
+  
   

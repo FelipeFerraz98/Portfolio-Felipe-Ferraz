@@ -12,13 +12,14 @@ const fadeIn = keyframes`
 `;
 
 export const Container = styled.main`
-    height: 100vh;
+    height: 101vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Espaça os elementos para que o último fique no final */
     align-items: center;
-
+    margin-bottom: 5em;
+    animation: ${fadeIn} 1.5s forwards;
     @media screen and (max-width: 768px) {
         flex-direction: column; 
         max-width: 90%;
@@ -72,7 +73,7 @@ export const Title = styled.h2`
     font-size: 72px;
     margin-bottom: 10px;
     line-height: 65px;
-    animation: ${fadeIn} 1.5s forwards;
+    animation: ${fadeIn} 2s forwards;
     color: #fff;
 
     @media screen and (max-width: 768px) {

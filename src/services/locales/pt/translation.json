@@ -2,7 +2,8 @@
     "header":{
         "home": "Inicio",
         "about": "Sobre",
-        "contact": "Contato"
+        "contact": "Contato",
+        "language": "Idioma"
     },
 
     "home": {

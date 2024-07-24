@@ -27,6 +27,7 @@ export const Text = styled.p`
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  position: relative; /* Adiciona position relativa para alocar submenu */
 
   &:hover {
     color: #c8d6f0;
@@ -55,6 +56,7 @@ export const Nav = styled.nav`
 
   ul li {
     margin-right: 20px;
+    position: relative; /* Permite que o submenu seja posicionado relativo ao item de menu */
   }
 
   ul li:last-child {
@@ -111,5 +113,46 @@ export const MobileNav = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
+  }
+`;
+
+// Estilo para o menu de idiomas
+export const LanguageMenu = styled.div`
+  position: absolute;
+  top: 100%; /* Coloca o submenu logo abaixo do texto "language" */
+  left: 50%; /* Ajusta para começar alinhado ao centro do texto de idioma */
+  transform: translateX(-50%); /* Centraliza o submenu em relação ao texto "language" */
+  background-color: #3a3a3a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+  padding: 10px 0; /* Adiciona um espaçamento vertical */
+  padding-right: 3em;
+
+  /* Certifique-se de que o submenu fique alinhado com o texto de idioma */
+  li {
+    width: max-content;
+  }
+
+`;
+
+// Estilo para cada opção de idioma
+export const LanguageOption = styled.div`
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  img {
+    width: 25px;
+    height: 25px; /
+    object-fit: cover; 
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #2c2c2c;
   }
 `;

@@ -2,11 +2,12 @@
     "header":{
         "home": "Home",
         "about": "About",
-        "contact": "Contact"
+        "contact": "Contact",
+        "language": "Language"
     },
 
     "home": {
-      "title": "Hi, I'm",
+      "title": "Hi, I am",
       "name": "Felipe Ferraz",
       "profession": "FullStack Developer",
       "contactButton": "Contact me"

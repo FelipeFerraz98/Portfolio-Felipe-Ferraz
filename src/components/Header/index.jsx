@@ -1,40 +1,59 @@
 import React, { useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import {
+  HeaderWrapper,
+  Nav,
+  Logo,
+  Text,
+  HamburgerMenu,
+  MobileNav,
+  LanguageMenu,
+  LanguageOption
+} from './styles';
 import logoimg from '../../assets/logo.png';
-import { useNavigate } from "react-router-dom";
-
-import { HeaderWrapper, Nav, Logo, Text, HamburgerMenu, MobileNav } from './styles';
 
 import { useTranslation } from 'react-i18next';
 
-const Header = () => {
-  const { t } = useTranslation();
-//   const scrollToElement = () => {
-//     const element = document.getElementById('footer');
-//     if (element) {
-//       element.scrollIntoView({ behavior: 'smooth' });
-//     }
-//   }
+// Importação de bandeiras
+import brFlag from '../../assets/Languages/Brazil.jpg';
+import usFlag from '../../assets/Languages/USA.jpg';
 
+const Header = () => {
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const { lang } = useParams(); // Obtém o idioma da URL atual
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+
+  const handleClickHome = () => {
+    navigate(`/${lang}/home`); // Redireciona para /:lang/home
+    setIsMobileMenuOpen(false);
+  };
 
   const handleClickProjects = () => {
-    navigate('/projects');
+    navigate(`/${lang}/projects`); // Redireciona para /:lang/projects
     setIsMobileMenuOpen(false);
   };
 
   const handleClickContact = () => {
-    navigate('/contact');
-    setIsMobileMenuOpen(false);
-  };
-
-  const handleClickHome = () => {
-    navigate('/');
+    navigate(`/${lang}/contact`); // Redireciona para /:lang/contact
     setIsMobileMenuOpen(false);
   };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleLanguageMenu = () => {
+    setIsLanguageMenuOpen(!isLanguageMenuOpen);
+  };
+
+  const handleChangeLanguage = (newLang) => {
+    if (newLang !== lang) {
+      navigate(`/${newLang}/home`); // Redireciona para o idioma selecionado
+      i18n.changeLanguage(newLang); // Atualiza o idioma do i18n
+    }
+    setIsLanguageMenuOpen(false); // Fecha o submenu após a troca de idioma
   };
 
   return (
@@ -48,6 +67,21 @@ const Header = () => {
           <li><Text onClick={handleClickHome}>{t('header.home')}</Text></li>
           <li><Text onClick={handleClickProjects}>{t('header.about')}</Text></li>
           <li><Text onClick={handleClickContact}>{t('header.contact')}</Text></li>
+          <li>
+            <Text onClick={toggleLanguageMenu}>
+              {t('header.language')}
+            </Text>
+            {isLanguageMenuOpen && (
+              <LanguageMenu>
+                <LanguageOption onClick={() => handleChangeLanguage('pt')}>
+                  <img src={brFlag} alt="Bandeira do Brasil" /> <Text>Português</Text>
+                </LanguageOption>
+                <LanguageOption onClick={() => handleChangeLanguage('en')}>
+                  <img src={usFlag} alt="Bandeira dos EUA" /> <Text>English</Text>
+                </LanguageOption>
+              </LanguageMenu>
+            )}
+          </li>
         </ul>
       </Nav>
       {isMobileMenuOpen && (

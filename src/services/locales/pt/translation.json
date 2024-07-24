@@ -47,6 +47,23 @@
       "description": "Suporte e HelpDesk do N1 ao N4; Monitoramento de máquinas com Zabbix; Verificação de logs SIP e pacotes de dados no Asterisk e Opensips; Implementação de API Rest para clientes; Treinamento e implementação de novos clientes."
       }
     }
+  },
+
+  "contact":{
+    "title": "Contate me"
+  },
+
+  "footer":{
+    "projects":{
+      "title": "Projetos"
+    },
+    "contact": "Contato",
+    "detailscompany": {
+      "first": "Na Ferraz Development, o seu projeto é a nossa prioridade.",
+      "second": "Prezamos pela excelência e inovação em cada solução que desenvolvemos.",
+      "third": "Estamos sempre prontos para transformar suas ideias em experiências digitais únicas.",
+      "fourth": "Conte conosco para tornar seus projetos em realidade."
+    }
   }
 
 }

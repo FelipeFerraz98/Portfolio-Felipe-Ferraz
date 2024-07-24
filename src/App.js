@@ -11,6 +11,7 @@ import ScrollToTop from './ScrollToTop';
 import { Header } from './components/Header';
 // import { Footer } from './components/Footer'
 import { Home } from './pages/Home';
+import { Contact } from './pages/Contact'; 
 import { About } from './pages/About';
 import { StarterPage } from './pages/StarterPage';
 import { LanguageProvider, useLanguage } from './hooks/useLanguage';
@@ -18,6 +19,7 @@ import { LanguageProvider, useLanguage } from './hooks/useLanguage';
 import './services/i18n';
 import { Skills } from './pages/Skills';
 import { Experience } from './pages/Experience';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -50,9 +52,11 @@ const MainApp = () => {
       <About />
       <Skills />
       <Experience />
+      <Contact />
       <Routes>
         {/* Adicione outras rotas conforme necessário */}
       </Routes>
+      <Footer />
     </>
   );
 };

@@ -71,7 +71,7 @@ export const TextBox = styled.div`
   text-align: left;
 `;
 
-export const Title = styled.h2`  /* Ajuste aqui para que o título seja h2 */
+export const Title = styled.h2` 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;

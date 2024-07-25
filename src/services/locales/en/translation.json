@@ -65,6 +65,13 @@
       "third": "We are always ready to turn your ideas into unique digital experiences.",
       "fourth": "Tell us to make your projects really."
     }
-  }
+  },
+
+  "portfolio": {
+   "first": "Explore the portfolio of ECS Marcenary. Click here to visital the site and check out the Mobile Projects!",
+   "second": "See the source cord of this project! Clice to access the repository in Github and explore the deravolley." ,
+   "third": "Meet PokeDex, a project developed with reacting a pokeapi. Click to find out how it was built!",
+   "fourth": "Go to my profile at Github! Click here for VE Projects and Contributions."
+ }
 }
   

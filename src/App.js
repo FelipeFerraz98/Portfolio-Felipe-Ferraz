@@ -20,6 +20,7 @@ import './services/i18n';
 import { Skills } from './pages/Skills';
 import { Experience } from './pages/Experience';
 import { Footer } from './components/Footer';
+import { Portfolio } from './pages/Portfolio';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ const MainApp = () => {
       <Home />
       <About />
       <Skills />
+      <Portfolio />
       <Experience />
       <Contact />
       <Routes>

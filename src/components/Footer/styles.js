@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const Text = styled.p`
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   text-align: left;
   color: #fff;
   font-size: 14px;
@@ -83,7 +83,7 @@ export const RightSection = styled(Section)`
 `;
 
 export const CompanyName = styled.h2`
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-size: 24px;
   border-bottom: 1px solid #444;
   margin-bottom: 10px;
@@ -91,7 +91,7 @@ export const CompanyName = styled.h2`
 
 export const SmallText = styled.p`
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   margin-bottom: 20px;
   @media screen and (max-width: 768px) {
     font-size: 12.5px;
@@ -100,14 +100,14 @@ export const SmallText = styled.p`
 
 export const ProjectsTitle = styled.h3`
   font-size: 20px;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   border-bottom: 1px solid #444;
   margin-bottom: 10px;
 `;
 
 export const ProjectsList = styled.ul`
   list-style-type: none;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   padding: 0;
   margin-left: 1.5em;
   text-align: left;
@@ -124,14 +124,14 @@ export const ProjectsList = styled.ul`
 
 export const ContactTitle = styled.h3`
   font-size: 20px;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   border-bottom: 1px solid #444;
   margin-bottom: 10px;
 `;
 
 export const ContactList = styled.ul`
   list-style-type: none;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   padding: 0;
 
   li {
@@ -149,6 +149,6 @@ export const BottomSection = styled.div`
 
 export const Copyright = styled.p`
   font-size: 12px;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   color: #888;
 `;

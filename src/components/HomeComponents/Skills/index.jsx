@@ -10,7 +10,7 @@ const Skills = () => {
 
   return (
     <Container ref={ref} inView={inView}>
-        <MainBoxWrapper>
+        <MainBoxWrapper id='skills'>
         <MainBox>
             <TextBox>
                 <Title>{t('about.content.skillsTitle')}</Title>

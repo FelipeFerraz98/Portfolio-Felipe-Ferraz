@@ -29,7 +29,7 @@ const Portfolio = () => {
 
     return (
         <Container ref={ref} inView={inView}>
-            <MainBoxWrapper>
+            <MainBoxWrapper id='portfolio'>
                 <MainBox>
                     <TextBox>
                         <Title>Portfolio</Title>

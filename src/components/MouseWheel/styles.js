@@ -26,6 +26,7 @@ export const  MouseScroll = styled.div`
   margin: 0 auto;
   width: 24px;
   height: 100px;
+  cursor: pointer;
 `;
 
 export const  Mouse = styled.div`

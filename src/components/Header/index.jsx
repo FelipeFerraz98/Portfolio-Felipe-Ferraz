@@ -27,18 +27,30 @@ const Header = () => {
 
   const handleClickHome = () => {
     navigate(`/${lang}/home`); // Redireciona para /:lang/home
+
+    window.scrollTo({ top: 0, behavior: 'smooth' }); //Garante começar no topo de home
+    
     setIsMobileMenuOpen(false);
   };
 
-  const handleClickProjects = () => {
-    navigate(`/${lang}/projects`); // Redireciona para /:lang/projects
+  const handleClickAbout = () => {
+    handleClickHome()
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } // Redireciona para about
     setIsMobileMenuOpen(false);
   };
 
   const handleClickContact = () => {
-    navigate(`/${lang}/contact`); // Redireciona para /:lang/contact
+    handleClickHome()
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } // Redireciona para contact
     setIsMobileMenuOpen(false);
   };
+
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -65,7 +77,7 @@ const Header = () => {
       <Nav isMobileMenuOpen={isMobileMenuOpen}>
         <ul>
           <li><Text onClick={handleClickHome}>{t('header.home')}</Text></li>
-          <li><Text onClick={handleClickProjects}>{t('header.about')}</Text></li>
+          <li><Text onClick={handleClickAbout}>{t('header.about')}</Text></li>
           <li><Text onClick={handleClickContact}>{t('header.contact')}</Text></li>
           <li>
             <Text onClick={toggleLanguageMenu}>
@@ -88,7 +100,7 @@ const Header = () => {
         <MobileNav>
           <ul>
             <li><Text onClick={handleClickHome}>{t('header.home')}</Text></li>
-            <li><Text onClick={handleClickProjects}>{t('header.about')}</Text></li>
+            <li><Text onClick={handleClickAbout}>{t('header.about')}</Text></li>
             <li><Text onClick={handleClickContact}>{t('header.contact')}</Text></li>
           </ul>
         </MobileNav>

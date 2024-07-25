@@ -8,6 +8,20 @@ import logoimg from '../../../assets/logo.png';
 const Start = () => {
   const { t } = useTranslation();
 
+  const handleClickAbout = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } // Redireciona para about
+  };
+
+  const handleClickContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } // Redireciona para about
+  };
+
   return (
     <>
       <Container>
@@ -22,14 +36,14 @@ const Start = () => {
                 {t('home.profession')} <br />
               </TextContent>
               <ButtonBox>
-                <Button title={t('home.contactButton')} />
+                <Button title={t('home.contactButton')} onClick={handleClickContact}/>
               </ButtonBox>
             </TextBox>
             <ImageWrapper src={logoimg} />
           </MainBox>
         </MainBoxWrapper>
         <MouseWheelBox>
-          <MouseWheel />
+          <MouseWheel onClick={handleClickAbout} />
         </MouseWheelBox>
       </Container>
     </>

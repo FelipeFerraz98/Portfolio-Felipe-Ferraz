@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <Container ref={ref} inView={inView}>
-      <MainBoxWrapper>
+      <MainBoxWrapper id='about'>
         <MainBox>
           <TextBox>
             <Title>{t('about.title')}</Title>

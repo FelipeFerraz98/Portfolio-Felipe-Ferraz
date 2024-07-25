@@ -16,7 +16,7 @@ const Experience = () => {
 
   return (
     <Container ref={ref} inView={inView}>
-      <MainBoxWrapper>
+      <MainBoxWrapper id='experience'>
         <MainBox>
           <TextBox>
             <Title>{t('experience.title')}</Title>

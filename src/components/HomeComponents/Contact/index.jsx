@@ -37,7 +37,7 @@ const Contact = () => {
     }
 
     return (
-        <Container ref={ref} inView={inView}>
+        <Container ref={ref} inView={inView} id='contact'>
             <MainBox>
                 <TextBox>
                     <Title>{t('contact.title')}</Title>

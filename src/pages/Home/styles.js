@@ -54,7 +54,7 @@ export const Title = styled.h1`
 `;
 
 export const Stroke = styled.div`
-  width: 50em;
+  width: 52em;
   border-bottom: 5px solid #007BFF;
   border-radius: 3em;
 `;

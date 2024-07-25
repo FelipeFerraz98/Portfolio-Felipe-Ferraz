@@ -7,11 +7,15 @@
         "language": "Idioma"
     },
 
-    "home": {
+    "start": {
       "title": "Olá, eu sou",
       "name": "Felipe Ferraz",
       "profession": "Desenvolvedor FullStack",
       "contactButton": "Entre em contato"
+    },
+
+    "home": {
+      "goodbye": "Obrigado por explorar!"
     },
 
     "about": {

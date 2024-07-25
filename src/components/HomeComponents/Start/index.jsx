@@ -29,14 +29,14 @@ const Start = () => {
           <MainBox>
             <TextBox>
               <Title>
-                {t('home.title')} <br />
-                <TextEmphasis>{t('home.name')}</TextEmphasis>
+                {t('start.title')} <br />
+                <TextEmphasis>{t('start.name')}</TextEmphasis>
               </Title>
               <TextContent>
-                {t('home.profession')} <br />
+                {t('start.profession')} <br />
               </TextContent>
               <ButtonBox>
-                <Button title={t('home.contactButton')} onClick={handleClickContact}/>
+                <Button title={t('start.contactButton')} onClick={handleClickContact}/>
               </ButtonBox>
             </TextBox>
             <ImageWrapper src={logoimg} />

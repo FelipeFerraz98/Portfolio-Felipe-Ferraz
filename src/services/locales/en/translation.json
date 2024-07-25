@@ -7,11 +7,14 @@
         "language": "Language"
     },
 
-    "home": {
+    "start": {
       "title": "Hi, I am",
       "name": "Felipe Ferraz",
       "profession": "FullStack Developer",
       "contactButton": "Contact me"
+    },
+    "home": {
+      "goodbye": "Thanks for scrolling!"
     },
 
     "about": {

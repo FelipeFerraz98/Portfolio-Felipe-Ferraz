@@ -9,13 +9,13 @@ import {
 import { GlobalStyle } from './styles/global';
 import ScrollToTop from './ScrollToTop';
 import { Header } from './components/Header';
-// import { Footer } from './components/Footer'
+import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { StarterPage } from './pages/StarterPage';
+import { Projects } from './pages/Projects';
 import { LanguageProvider, useLanguage } from './hooks/useLanguage';
 
 import './services/i18n';
-import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -44,9 +44,10 @@ const MainApp = () => {
     <>
       <ScrollToTop />
       <Header />
-      <Home />
       <Routes>
-        <Route path={`${lang}/home`} element={<Home />} />
+        <Route path={`home`} element={<Home />} />
+        <Route path={`projects`} element={<Projects />} />
+        <Route path="*" element={<Navigate to="home" />} /> {/* Redireciona para home em caso de rota não encontrada */}
       </Routes>
       <Footer />
     </>

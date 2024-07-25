@@ -72,6 +72,23 @@
     "second":"Veja o código fonte deste projeto! Clique para acessar o repositório no GitHub e explorar o desenvolvimento.",
     "third": "Conheça a Pokedex, um projeto desenvolvido com React e a PokeAPI. Clique para descobrir como foi construído!",
     "fourth": "Acesse meu perfil no GitHub! Clique aqui para ver outros projetos e contribuições."
+  },
+
+  "projects":{
+    "click": "Clique para acessar!",
+    "language": "Linguagem: ",
+    "project1":{
+      "title": "ECS Marcenaria",
+      "detail": "React WebSite"
+    },
+    "project2":{
+      "title": "Ferraz Development",
+      "detail": "React WebSite com GitHub API"
+    },
+    "project3": {
+      "title": "Pokedex",
+      "detail": "React WebSite com PokeAPI"
+    }
   }
 
 }

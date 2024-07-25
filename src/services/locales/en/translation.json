@@ -72,6 +72,23 @@
    "second": "See the source cord of this project! Clice to access the repository in Github and explore the deravolley." ,
    "third": "Meet PokeDex, a project developed with reacting a pokeapi. Click to find out how it was built!",
    "fourth": "Go to my profile at Github! Click here for VE Projects and Contributions."
- }
+ },
+
+ "projects":{
+    "click": "Click to go!",
+    "language": "Language",
+    "project1":{
+      "title": "ECS Marcenaria",
+      "detail": "React WebSite"
+    },
+    "project2":{
+      "title": "Ferraz Development",
+      "detail": "React WebSite with GitHub API"
+    },
+    "project3": {
+      "title": "Pokedex",
+      "detail": "React WebSite with PokeAPI"
+    }
+  }
 }
   

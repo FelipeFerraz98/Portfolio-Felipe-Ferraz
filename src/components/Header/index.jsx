@@ -51,6 +51,15 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const handleClickPortfolio = () => {
+    handleClickHome()
+    const element = document.getElementById('portfolio');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } // Redireciona para portfolio
+    setIsMobileMenuOpen(false);
+  };
+
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -79,6 +88,7 @@ const Header = () => {
           <li><Text onClick={handleClickHome}>{t('header.home')}</Text></li>
           <li><Text onClick={handleClickAbout}>{t('header.about')}</Text></li>
           <li><Text onClick={handleClickContact}>{t('header.contact')}</Text></li>
+          <li><Text onClick={handleClickPortfolio}>{t('header.portfolio')}</Text></li>
           <li>
             <Text onClick={toggleLanguageMenu}>
               {t('header.language')}
@@ -102,6 +112,12 @@ const Header = () => {
             <li><Text onClick={handleClickHome}>{t('header.home')}</Text></li>
             <li><Text onClick={handleClickAbout}>{t('header.about')}</Text></li>
             <li><Text onClick={handleClickContact}>{t('header.contact')}</Text></li>
+            <li><Text onClick={handleClickPortfolio}>{t('header.portfolio')}</Text></li>
+          <li>
+            <Text onClick={toggleLanguageMenu}>
+              {t('header.language')}
+            </Text>
+          </li>
           </ul>
         </MobileNav>
       )}

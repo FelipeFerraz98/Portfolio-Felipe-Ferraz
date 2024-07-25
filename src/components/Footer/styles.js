@@ -11,7 +11,7 @@ export const Text = styled.p`
   cursor: pointer;
 
   &:hover {
-    color: #c8d6f0;
+    color: #007BFF;
     transition: color 0.5s ease-in-out;
   }
 

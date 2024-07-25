@@ -30,7 +30,7 @@ export const Text = styled.p`
   position: relative; /* Adiciona position relativa para alocar submenu */
 
   &:hover {
-    color: #c8d6f0;
+    color: #007BFF;
     transition: color 0.5s ease-in-out;
   }
 
@@ -153,6 +153,6 @@ export const LanguageOption = styled.div`
   }
 
   &:hover {
-    background-color: #2c2c2c;
+    background-color: #007BFF;
   }
 `;

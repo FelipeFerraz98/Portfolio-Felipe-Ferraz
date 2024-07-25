@@ -11,16 +11,11 @@ import ScrollToTop from './ScrollToTop';
 import { Header } from './components/Header';
 // import { Footer } from './components/Footer'
 import { Home } from './pages/Home';
-import { Contact } from './pages/Contact'; 
-import { About } from './pages/About';
 import { StarterPage } from './pages/StarterPage';
 import { LanguageProvider, useLanguage } from './hooks/useLanguage';
 
 import './services/i18n';
-import { Skills } from './pages/Skills';
-import { Experience } from './pages/Experience';
 import { Footer } from './components/Footer';
-import { Portfolio } from './pages/Portfolio';
 
 function App() {
   return (
@@ -50,13 +45,8 @@ const MainApp = () => {
       <ScrollToTop />
       <Header />
       <Home />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Experience />
-      <Contact />
       <Routes>
-        {/* Adicione outras rotas conforme necessário */}
+        <Route path={`${lang}/home`} element={<Home />} />
       </Routes>
       <Footer />
     </>

@@ -30,8 +30,6 @@ export const Container = styled.main`
     transform: translateY(0);
     ${fadeAnimation};
   `};
-
-  margin-bottom: 5em;
   
   @media screen and (max-width: 768px) {
     max-width: 90%;

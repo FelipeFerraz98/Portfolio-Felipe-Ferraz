@@ -2,10 +2,10 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Card, Container, Image, ImagesContainer, MainBox, ImageOverlay, OverlayText, Title, Stroke, TextBox, MainBoxWrapper } from './styles';
 import { useTranslation } from 'react-i18next';
-import slide1 from '../../assets/ProjectsImages/ecslogo.png';
-import slide2 from '../../assets/ProjectsImages/FerrazDevelopment.png';
-import slide3 from '../../assets/ProjectsImages/pokedex.png';
-import slide4 from '../../assets/ProjectsImages/GitHub.svg';
+import slide1 from '../../../assets/ProjectsImages/ecslogo.png';
+import slide2 from '../../../assets/ProjectsImages/FerrazDevelopment.png';
+import slide3 from '../../../assets/ProjectsImages/pokedex.png';
+import slide4 from '../../../assets/ProjectsImages/GitHub.svg';
 
 const Portfolio = () => {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });

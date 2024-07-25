@@ -1,37 +1,29 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Container, Title, TextContent, ButtonBox, TextEmphasis, ImageWrapper, MainBox, TextBox, MainBoxWrapper, MouseWheelBox } from './styles';
-import { Button } from '../../components/Button';
-import { MouseWheel } from '../../components/MouseWheel';
-import logoimg from '../../assets/logo.png';
+import { Start } from '../../components/HomeComponents/Start';
+import { About } from '../../components/HomeComponents/About';
+import { Skills } from '../../components/HomeComponents/Skills';
+import { Portfolio } from '../../components/HomeComponents/Portfolio';
+import { Experience } from '../../components/HomeComponents/Experience';
+import { Contact } from '../../components/HomeComponents/Contact';
+import { Stroke, TextBox, Title } from './styles';
+
+import { useInView } from 'react-intersection-observer';
+
 
 const Home = () => {
-  const { t } = useTranslation();
-
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
     <>
-      <Container>
-        <MainBoxWrapper>
-          <MainBox>
-            <TextBox>
-              <Title>
-                {t('home.title')} <br />
-                <TextEmphasis>{t('home.name')}</TextEmphasis>
-              </Title>
-              <TextContent>
-                {t('home.profession')} <br />
-              </TextContent>
-              <ButtonBox>
-                <Button title={t('home.contactButton')} />
-              </ButtonBox>
-            </TextBox>
-            <ImageWrapper src={logoimg} />
-          </MainBox>
-        </MainBoxWrapper>
-        <MouseWheelBox>
-          <MouseWheel />
-        </MouseWheelBox>
-      </Container>
+      <Start />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Experience />
+      <Contact />
+      <TextBox ref={ref} inView={inView}>
+        <Title>Thanks for Scrolling!</Title>
+        <Stroke />
+      </TextBox>
     </>
   );
 }

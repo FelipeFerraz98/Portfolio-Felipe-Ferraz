@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Container, Title, Stroke, MainBox, TextBox, MainBoxWrapper, CardBox } from './styles';
-import { SkillsCards } from '../../components/SkillsCards';
+import { SkillsCards } from '../../SkillsCards';
 import { useTranslation } from 'react-i18next';
 
 const Skills = () => {

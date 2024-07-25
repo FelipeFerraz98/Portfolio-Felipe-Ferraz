@@ -1,13 +1,13 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Container, Card, TextContent, Image, CardBox, Title, Stroke, MainBox, TextBox, SocialIcons } from './styles';
-import email from '../../assets/ContactIcons/email.svg'
-import phone from '../../assets/ContactIcons/telephone.svg'
-import location from '../../assets/ContactIcons/location.svg'
-import whatsapp from '../../assets/ContactIcons/whatsapp.svg'
-import linkedin from '../../assets/ContactIcons/linkedin.svg'
-import instagram from '../../assets/ContactIcons/instagram.png'
-import youtube from '../../assets/ContactIcons/youtube.svg'
+import email from '../../../assets/ContactIcons/email.svg'
+import phone from '../../../assets/ContactIcons/telephone.svg'
+import location from '../../../assets/ContactIcons/location.svg'
+import whatsapp from '../../../assets/ContactIcons/whatsapp.svg'
+import linkedin from '../../../assets/ContactIcons/linkedin.svg'
+import instagram from '../../../assets/ContactIcons/instagram.png'
+import youtube from '../../../assets/ContactIcons/youtube.svg'
 
 import { useTranslation } from 'react-i18next';
 

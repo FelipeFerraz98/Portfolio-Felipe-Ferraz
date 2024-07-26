@@ -40,6 +40,10 @@ const Footer = () => {
     const handleClickOpenGitHub = () => {
         window.open('https://github.com/FelipeFerraz98', '_blank', 'noopener,noreferrer');
     }
+
+    const handleClickOpenInstagram = () => {
+        window.open('https://www.instagram.com/ferrazdevelopment/', '_blank', 'noopener,noreferrer');
+    }
     
     const handleClickProjects = () => {
         navigate(`/${lang}/projects`); // Redireciona para /:lang/home
@@ -81,7 +85,7 @@ const Footer = () => {
                         <li><Text onClick={handleClickOpenLinkedIn}>
                                 LinkedIn: Felipe Ferraz
                         </Text></li>
-                        <li><Text>
+                        <li><Text onClick={handleClickOpenInstagram}>
                                 Instagram: Ferraz Development
                         </Text></li>
                     </ContactList>

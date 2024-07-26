@@ -37,11 +37,11 @@ export const Container = styled.main`
   }
 `;
 
-
 export const CardBox = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%; /* Ajusta a largura para 100% */
 `;
 
 export const Card = styled.div`
@@ -49,17 +49,26 @@ export const Card = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #2a2a2a;
-    margin: 2em;
-    padding: 1em 3em;
+    margin: 1em;
+    padding: 1em 2em; /* Ajuste no padding */
     border-radius: .5em;
     align-items: center;
     text-align: center;
-`;
 
+    @media screen and (max-width: 768px) {
+      padding: 1em;
+      margin: 0.5em;
+    }
+`;
 
 export const Image = styled.img`
     width: 20px;
     margin: 1em;
+
+    @media screen and (max-width: 768px) {
+      width: 15px; /* Ajusta a largura da imagem em mobile */
+      margin: 0.5em;
+    }
 `
 
 export const TextContent = styled.p`
@@ -68,10 +77,15 @@ export const TextContent = styled.p`
     font-weight: 400;
     font-size: 20px;
     color: #fff;
-    
+    margin: 0;
+
     &:hover {
     color: #007BFF;
     transition: color 0.5s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px; /* Ajusta o tamanho da fonte em mobile */
   }
 `;
 
@@ -84,11 +98,12 @@ export const Title = styled.h2`
   line-height: 65px;
   animation: ${fadeIn} 1.5s forwards;
   color: #fff;
+  text-align: center; /* Alinha o texto no centro */
 
   @media screen and (max-width: 768px) {
     font-size: 48px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza o título */
     text-align: center;
   }
 `;
@@ -97,29 +112,34 @@ export const Stroke = styled.div`
   width: 5em;
   border-bottom: 5px solid #007BFF;
   border-radius: 3em;
+  margin: 0 auto; /* Centraliza o Stroke */
+
+  @media screen and (max-width: 768px) {
+    width: 4em;
+  }
 `;
 
 export const MainBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left; 
+  align-items: center; /* Centraliza os itens */
+  text-align: center; 
   max-width: 80%;
 `;
 
 export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Alinha os textos ao centro */
   margin-top: 2rem;
-  text-align: left;
+  text-align: center;
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-align: left;
+  justify-content: center; /* Centraliza os ícones sociais */
   max-width: 80%;
 
   img {
@@ -132,7 +152,10 @@ export const SocialIcons = styled.div`
       border-bottom-color: #007BFF; /* Apenas muda a cor do border-bottom */
       transition: border-bottom-color 0.5s ease-in-out; /* Animação para a mudança de cor do border-bottom */
     }
+
+    @media screen and (max-width: 768px) {
+      width: 25px; /* Ajusta a largura dos ícones em mobile */
+    }
   }
 `;
-
 

@@ -12,14 +12,14 @@ const Start = () => {
     const element = document.getElementById('about');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-    } // Redireciona para about
+    }
   };
 
   const handleClickContact = () => {
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-    } // Redireciona para about
+    }
   };
 
   return (

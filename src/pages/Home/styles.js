@@ -24,16 +24,17 @@ export const TextBox = styled.div`
   width: 100%; /* Certifica-se de que o TextBox use a largura total */
   height: 40vh;
 
-    ${({ inView }) => inView && css`
+  ${({ inView }) => inView && css`
     opacity: 1;
     transform: translateY(0);
     ${fadeAnimation};
   `};
+  
   @media screen and (max-width: 768px) {
     max-width: 90%;
     margin-top: 80px;
+    height: auto; /* Ajusta a altura para se adequar ao conteúdo em telas menores */
   }
-
 `;
 
 export const Title = styled.h1`
@@ -57,4 +58,10 @@ export const Stroke = styled.div`
   width: 52em;
   border-bottom: 5px solid #007BFF;
   border-radius: 3em;
+  margin: 1em 0; /* Adiciona uma margem vertical para espaçamento */
+
+  @media screen and (max-width: 768px) {
+    width: 80%; /* Ajusta a largura para telas menores */
+    max-width: 400px; /* Define uma largura máxima para evitar que ultrapasse a tela */
+  }
 `;

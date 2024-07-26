@@ -36,6 +36,10 @@ const Contact = () => {
         window.open('mailto:felipeferraz1398@gmail.com', '_blank', 'noopener,noreferrer');
     }
 
+    const handleClickOpenEmail2 = () => {
+        window.open('mailto:ferrazdevelopment@gmail.com', '_blank', 'noopener,noreferrer');
+    }
+
     const handleClickOpenInstagram = () => {
         window.open('https://www.instagram.com/ferrazdevelopment/', '_blank', 'noopener,noreferrer');
     }
@@ -52,22 +56,25 @@ const Contact = () => {
                     <Stroke />
                 </TextBox>
                 <CardBox>
-                        <Card onClick={handleClickOpenEmail}>
-                            <Image src={email}/>
-                            <TextContent>felipeferraz1398@gmail.com</TextContent>
-                        </Card>
-                        <Card onClick={handleClickOpenPhone}>
-                            <Image src={phone}/>
-                            <TextContent>+55 (11) 975522976</TextContent>
-                        </Card>
-                        <Card onClick={handleClickOpenLocation}>
-                            <Image src={location}/>
-                            <TextContent>Campo Limpo Paulista, SP - Brasil</TextContent>
-                        </Card>
+                    <Card onClick={handleClickOpenEmail}>
+                        <Image src={email}/>
+                        <TextContent>felipeferraz1398@gmail.com</TextContent>
+                    </Card>
+                    <Card onClick={handleClickOpenEmail2}>
+                        <Image src={email}/>
+                        <TextContent>ferrazdevelopment@gmail.com</TextContent>
+                    </Card>
+                    <Card onClick={handleClickOpenPhone}>
+                        <Image src={phone}/>
+                        <TextContent>+55 (11) 975522976</TextContent>
+                    </Card>
+                    <Card onClick={handleClickOpenLocation}>
+                        <Image src={location}/>
+                        <TextContent>Campo Limpo Paulista, SP - Brasil</TextContent>
+                    </Card>
                 </CardBox>
             </MainBox>
             <SocialIcons>
-                
                 <Image src={whatsapp} onClick={handleClickOpenWhatsApp}/>
                 <Image src={linkedin} onClick={handleClickOpenLinkedIn}/>
                 <Image src={instagram} onClick={handleClickOpenInstagram}/>

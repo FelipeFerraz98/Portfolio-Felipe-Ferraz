@@ -36,6 +36,14 @@ const Contact = () => {
         window.open('mailto:felipeferraz1398@gmail.com', '_blank', 'noopener,noreferrer');
     }
 
+    const handleClickOpenInstagram = () => {
+        window.open('https://www.instagram.com/ferrazdevelopment/', '_blank', 'noopener,noreferrer');
+    }
+
+    const handleClickOpenYouTube = () => {
+        window.open('https://www.youtube.com/@FerrazDevelopment', '_blank', 'noopener,noreferrer');
+    }
+
     return (
         <Container ref={ref} inView={inView} id='contact'>
             <MainBox>
@@ -62,8 +70,8 @@ const Contact = () => {
                 
                 <Image src={whatsapp} onClick={handleClickOpenWhatsApp}/>
                 <Image src={linkedin} onClick={handleClickOpenLinkedIn}/>
-                <Image src={instagram}/>
-                <Image src={youtube}/>
+                <Image src={instagram} onClick={handleClickOpenInstagram}/>
+                <Image src={youtube} onClick={handleClickOpenYouTube}/>
             </SocialIcons>
         </Container>
     );

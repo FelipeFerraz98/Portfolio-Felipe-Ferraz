@@ -27,7 +27,9 @@ const Experience = () => {
                 <DetailsTextBox>
                   <SubTitle>{t('experience.content.first.title')}</SubTitle>
                   <DetailsTitle>{t('experience.content.first.location')}</DetailsTitle>
-                  <TextContent>{t('experience.content.first.description')}</TextContent>
+                  <TextContent>
+                  {renderDescriptionAsList(t('experience.content.first.description'))}
+                  </TextContent>
                 </DetailsTextBox>
               </DetailsBox>
             </HeightStroke>

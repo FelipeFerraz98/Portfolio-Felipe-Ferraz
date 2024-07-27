@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Container, Card, TextContent, Image, CardBox, Title, Stroke, MainBox, TextBox, SocialIcons } from './styles';
+import { Container, Card, TextContent, Image, CardBox, Title, Stroke, MainBox, TextBox, SocialIcons, MainBoxWrapper } from './styles';
 import email from '../../../assets/ContactIcons/email.svg'
 import phone from '../../../assets/ContactIcons/telephone.svg'
 import location from '../../../assets/ContactIcons/location.svg'
@@ -51,6 +51,7 @@ const Contact = () => {
     return (
         <Container ref={ref} inView={inView} id='contact'>
             <MainBox>
+            <MainBoxWrapper>
                 <TextBox>
                     <Title>{t('contact.title')}</Title>
                     <Stroke />
@@ -73,6 +74,7 @@ const Contact = () => {
                         <TextContent>Campo Limpo Paulista, SP - Brasil</TextContent>
                     </Card>
                 </CardBox>
+            </MainBoxWrapper>
             </MainBox>
             <SocialIcons>
                 <Image src={whatsapp} onClick={handleClickOpenWhatsApp}/>

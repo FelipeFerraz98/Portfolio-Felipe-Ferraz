@@ -16,7 +16,7 @@ const fadeAnimation = css`
 `;
 
 export const Container = styled.main`
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column; 
@@ -59,6 +59,20 @@ export const Card = styled.div`
       padding: 1em;
       margin: 0.5em;
     }
+`;
+
+
+export const MainBoxWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+    margin-top: 80px;
+  }
 `;
 
 export const Image = styled.img`
@@ -112,10 +126,10 @@ export const Stroke = styled.div`
   width: 5em;
   border-bottom: 5px solid #007BFF;
   border-radius: 3em;
-  margin: 0 auto; /* Centraliza o Stroke */
 
   @media screen and (max-width: 768px) {
     width: 4em;
+    margin: 0 auto; /* Centraliza o Stroke */
   }
 `;
 
@@ -124,15 +138,15 @@ export const MainBox = styled.div`
   flex-direction: column;
   align-items: center; /* Centraliza os itens */
   text-align: center; 
-  max-width: 80%;
 `;
+
 
 export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinha os textos ao centro */
+  align-items: flex-start;
   margin-top: 2rem;
-  text-align: center;
+  text-align: left;
 `;
 
 export const SocialIcons = styled.div`
